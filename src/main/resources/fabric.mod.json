@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aestheticstairs",
+	"version": "${version}",
+	"name": "Aesthetic Stairs",
+	"description": "This mod is all about many new various decorative stairs!",
+	"authors": [
+		"Almiris (Alminoris)"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/Alminoris/AestheticStairs"
+	},
+	"license": "MIT",
+	"icon": "assets/aestheticstairs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.alminoris.aestheticstairs.AestheticStairs"
+		],
+		"client": [
+			"net.alminoris.aestheticstairs.AestheticStairsClient"
+		],
+		"fabric-datagen": [
+			"net.alminoris.aestheticstairs.AestheticStairsDataGenerator"
+		]
+	},
+	"mixins": [
+		"aestheticstairs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
