@@ -26,13 +26,86 @@ public class ModItemGroups
                     "bauhinia", "pine", "fir", "cedar", "araucaria", "juniper"
             };
 
-    public static final ItemGroup ALADRS_TAB = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(AestheticStairs.MOD_ID, "aladrstab"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aladrstab"))
-                    .icon(() -> new ItemStack(Blocks.LADDER)).entries((displayContext, entries) ->
+    public static final ItemGroup ASTAIRS_TAB = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(AestheticStairs.MOD_ID, "astairstab"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astairstab"))
+                    .icon(() -> new ItemStack(ModBlocks.STAIRCASES.get("oak"))).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.WOODS)
                             entries.add(ModBlocks.STAIRCASES.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.STAIRCASES.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.STAIRCASES.get(name));
+                            }
+                        }
+
+                        for(String name : BlockSetsHelper.WOODS)
+                            entries.add(ModBlocks.SMALL_STAIRCASES.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRCASES.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRCASES.get(name));
+                            }
+                        }
+
+                        for(String name : BlockSetsHelper.WOODS)
+                            entries.add(ModBlocks.STAIRAILS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.STAIRAILS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.STAIRAILS.get(name));
+                            }
+                        }
+
+                        for(String name : BlockSetsHelper.WOODS)
+                            entries.add(ModBlocks.SMALL_STAIRAILS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRAILS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRAILS.get(name));
+                            }
+                        }
 
                         for(String name : BlockSetsHelper.WOODS)
                             entries.add(ModItems.WOODEN_STICKS.get(name));
@@ -41,19 +114,11 @@ public class ModItemGroups
                         {
                             for(String name : EXTRA_WOODS_AN)
                             {
-                                entries.add(ModBlocks.STAIRCASES.get(name));
-                            }
-                            for(String name : EXTRA_WOODS_AN)
-                            {
                                 entries.add(ModItems.WOODEN_STICKS.get(name));
                             }
                         }
                         if (FabricLoader.getInstance().isModLoaded("wildfields"))
                         {
-                            for(String name : EXTRA_WOODS_WF)
-                            {
-                                entries.add(ModBlocks.STAIRCASES.get(name));
-                            }
                             for(String name : EXTRA_WOODS_WF)
                             {
                                 entries.add(ModItems.WOODEN_STICKS.get(name));

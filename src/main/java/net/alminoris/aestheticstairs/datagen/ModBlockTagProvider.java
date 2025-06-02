@@ -19,10 +19,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
-        for (String name : BlockSetsHelper.getWoods())
-        {
-            getOrCreateTagBuilder(BlockTags.CLIMBABLE)
-                    .add(ModBlocks.STAIRCASES.get(name));
-        }
+
     }
 }

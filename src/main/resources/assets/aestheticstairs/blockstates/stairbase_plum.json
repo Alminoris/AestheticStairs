@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticstairs:block/stairbase_plum" },
+    "facing=south": { "model": "aestheticstairs:block/stairbase_plum", "y": 180 },
+    "facing=west": { "model": "aestheticstairs:block/stairbase_plum", "y": 270 },
+    "facing=east": { "model": "aestheticstairs:block/stairbase_plum", "y": 90 }
+  }
+}

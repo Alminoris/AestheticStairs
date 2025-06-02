@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:quince_planks"
+    }
+  },
+  "pattern": [
+    "# ",
+    " #"
+    
+  ],
+  "result": {
+    "count": 4,
+    "id": "aestheticstairs:quince_stick"
+  }
+}

@@ -21,6 +21,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
         for(String name : BlockSetsHelper.getWoods())
         {
             addDrop(ModBlocks.STAIRCASES.get(name));
+            addDrop(ModBlocks.SMALL_STAIRCASES.get(name));
+            addDrop(ModBlocks.STAIRAILS.get(name));
+            addDrop(ModBlocks.SMALL_STAIRAILS.get(name));
         }
     }
 }

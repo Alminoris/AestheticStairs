@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticstairs:block/stairbase_olive" },
+    "facing=south": { "model": "aestheticstairs:block/stairbase_olive", "y": 180 },
+    "facing=west": { "model": "aestheticstairs:block/stairbase_olive", "y": 270 },
+    "facing=east": { "model": "aestheticstairs:block/stairbase_olive", "y": 90 }
+  }
+}

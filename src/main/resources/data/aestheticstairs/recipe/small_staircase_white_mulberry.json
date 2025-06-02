@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:stripped_white_mulberry_log"
+    },
+    "/": {
+      "item": "aestheticstairs:white_mulberry_stick"
+    }
+  },
+  "pattern": [
+    "# ",
+    "/#"
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_staircase_white_mulberry"
+  }
+}
