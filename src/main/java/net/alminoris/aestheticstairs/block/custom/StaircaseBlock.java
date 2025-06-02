@@ -131,9 +131,9 @@ public class StaircaseBlock extends YAxisRotatedBlock
 
             boolean isStackFound = (!BLOCK_NAME.split("_")[0].equals("small") && stack.isOf(ModBlocks.STAIRAILS.get(NAME).asItem())) || (BLOCK_NAME.split("_")[0].equals("small") && stack.isOf(ModBlocks.SMALL_STAIRAILS.get(NAME).asItem()));
 
-            if (!currentRailed && isStackFound && stack.getCount() >= 5)
+            if (!currentRailed && isStackFound)
             {
-                stack.decrement(5);
+                stack.decrement(1);
                 currentRailed = true;
 
                 world.setBlockState(pos, state
