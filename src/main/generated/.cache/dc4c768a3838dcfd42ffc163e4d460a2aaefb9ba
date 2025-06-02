@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-01T22:44:56.4425002	Aesthetic Stairs/Model Definitions
+// 1.20.1	2025-06-02T08:09:11.5774882	Aesthetic Stairs/Model Definitions
 33f4b0d4528a56446c68c7a02721b40b5c5c2328 assets\aestheticstairs\models\item\cedar_stick.json
 aac9c1199198efcf93114c790c316cd776880618 assets\aestheticstairs\models\item\small_stairail_fir.json
 488f2cd1aedafe1522c96f77478c7dd39cc4cb99 assets\aestheticstairs\models\item\jungle_stick.json
@@ -99,8 +99,8 @@ a7f0af55ad31abbe65464ea4d08e40ef6223d1bf assets\aestheticstairs\models\item\smal
 e8967052b66cad87d229c3145758a516badc350f assets\aestheticstairs\models\item\small_staircase_hazelnut.json
 b4a517d6c65a0be7b72e0fe670fde68441e94f99 assets\aestheticstairs\models\item\spruce_stick.json
 7cf9b5035f1c54004477146b653639c25f5efe16 assets\aestheticstairs\models\item\staircase_juniper.json
-17305ff1875c75345bcc0e72eefd5576c9503061 assets\aestheticstairs\models\item\small_staircase_viburnum.json
 fb5a7950b8e5b8b9285ed98ba165f2529788a643 assets\aestheticstairs\models\item\small_staircase_juniper.json
+17305ff1875c75345bcc0e72eefd5576c9503061 assets\aestheticstairs\models\item\small_staircase_viburnum.json
 336757518ecca159a0564ef6ecd08140b5805b47 assets\aestheticstairs\models\item\stairail_dark_oak.json
 d08ea96421701dc18fd1677c90766e8fb91e158f assets\aestheticstairs\models\item\small_staircase_araucaria.json
 e1021771342125273b1fb207a9f6994fb8e57b1b assets\aestheticstairs\models\item\stairail_fir.json

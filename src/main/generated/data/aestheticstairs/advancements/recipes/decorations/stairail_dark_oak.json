@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dark_oak_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aestheticstairs:dark_oak_stick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stripped_dark_oak_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stripped_dark_oak_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aestheticstairs:stairail_dark_oak"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stripped_dark_oak_log",
+      "has_dark_oak_stick",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aestheticstairs:stairail_dark_oak"
+    ]
+  },
+  "sends_telemetry_event": false
+}

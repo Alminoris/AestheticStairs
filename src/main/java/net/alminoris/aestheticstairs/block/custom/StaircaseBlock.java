@@ -14,6 +14,7 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -111,7 +112,7 @@ public class StaircaseBlock extends YAxisRotatedBlock
     }
 
     @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit)
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit)
     {
         Variant currentVariant = state.get(VARIANT);
         boolean currentRailed = state.get(RAILED);
@@ -165,11 +166,11 @@ public class StaircaseBlock extends YAxisRotatedBlock
                 return ActionResult.SUCCESS;
             }
         }
-        return super.onUse(state, world, pos, player, hit);
+        return super.onUse(state, world, pos, player, hand, hit);
     }
 
     @Override
-    protected BlockRenderType getRenderType(BlockState state)
+    public BlockRenderType getRenderType(BlockState state)
     {
         return BlockRenderType.MODEL;
     }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:hazelnut_planks"
+    }
+  },
+  "pattern": [
+    "# ",
+    " #"
+    
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:hazelnut_stick"
+  }
+}

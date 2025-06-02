@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_mangrove_log"
+    },
+    "/": {
+      "item": "aestheticstairs:mangrove_stick"
+    }
+  },
+  "pattern": [
+    "# ",
+    "/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_staircase_mangrove"
+  },
+  "show_notification": true
+}

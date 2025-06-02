@@ -80,7 +80,7 @@ public class StairailBlock extends YAxisRotatedBlock
     }
 
     @Override
-    protected BlockRenderType getRenderType(BlockState state)
+    public BlockRenderType getRenderType(BlockState state)
     {
         return BlockRenderType.MODEL;
     }

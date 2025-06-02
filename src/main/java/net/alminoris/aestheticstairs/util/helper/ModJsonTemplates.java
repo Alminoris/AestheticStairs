@@ -42,7 +42,7 @@ public class ModJsonTemplates
               ],
               "result": {
                 "count": COUNT,
-                "id": "aestheticstairs:OUTPUT_NAME"
+                "item": "aestheticstairs:OUTPUT_NAME"
               }
             }
             """;

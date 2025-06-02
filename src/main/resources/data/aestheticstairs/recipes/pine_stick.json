@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:pine_planks"
+    }
+  },
+  "pattern": [
+    "# ",
+    " #"
+    
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:pine_stick"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_bamboo_block"
+    },
+    "/": {
+      "item": "aestheticstairs:bamboo_stick"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:stairail_bamboo"
+  },
+  "show_notification": true
+}
