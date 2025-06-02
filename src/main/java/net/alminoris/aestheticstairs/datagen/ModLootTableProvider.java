@@ -2,21 +2,18 @@ package net.alminoris.aestheticstairs.datagen;
 
 import net.alminoris.aestheticstairs.block.ModBlocks;
 import net.alminoris.aestheticstairs.util.helper.BlockSetsHelper;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.registry.RegistryWrapper;
-
-import java.util.concurrent.CompletableFuture;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider
 {
-    public ModLootTableProvider(FabricDataOutput dataOutput)
+    public ModLootTableProvider(FabricDataGenerator dataGenerator)
     {
-        super(dataOutput);
+        super(dataGenerator);
     }
 
     @Override
-    public void generate()
+    public void generateBlockLootTables()
     {
         for(String name : BlockSetsHelper.getWoods())
         {

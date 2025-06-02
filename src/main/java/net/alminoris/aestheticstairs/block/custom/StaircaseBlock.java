@@ -3,13 +3,13 @@ package net.alminoris.aestheticstairs.block.custom;
 import net.alminoris.aestheticstairs.block.ModBlocks;
 import net.alminoris.aestheticstairs.item.ModItems;
 import net.alminoris.aestheticstairs.util.helper.VoxelShapeHelper;
+import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
@@ -144,7 +144,7 @@ public class StaircaseBlock extends YAxisRotatedBlock
                 return ActionResult.SUCCESS;
             }
 
-            if (currentRailed && stack.isIn(ItemTags.AXES))
+            if (currentRailed && stack.isIn(ConventionalItemTags.AXES))
             {
                 if (stack.getDamage() < stack.getMaxDamage() - 1)
                     stack.setDamage(stack.getDamage() + 1);

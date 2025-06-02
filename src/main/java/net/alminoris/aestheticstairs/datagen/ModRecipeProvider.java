@@ -4,41 +4,40 @@ import net.alminoris.aestheticstairs.block.ModBlocks;
 import net.alminoris.aestheticstairs.item.ModItems;
 import net.alminoris.aestheticstairs.util.helper.BlockSetsHelper;
 import net.alminoris.aestheticstairs.util.helper.ModJsonHelper;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider
 {
-    public ModRecipeProvider(FabricDataOutput output)
+    public ModRecipeProvider(FabricDataGenerator dataGenerator)
     {
-        super(output);
+        super(dataGenerator);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> recipeExporter)
+    public void generateRecipes(Consumer<RecipeJsonProvider> recipeExporter)
     {
         for(String name : BlockSetsHelper.WOODS)
         {
             String blockName = (name.equals("crimson") || name.equals("warped")) ? "stem" : (name.equals("bamboo") ? "block" : "log");
-            Block block = Registries.BLOCK.get(Identifier.of("minecraft","stripped_"+name+"_"+blockName));
+            Block block = Registry.BLOCK.get(Identifier.of("minecraft","stripped_"+name+"_"+blockName));
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModItems.WOODEN_STICKS.get(name), 4)
-                    .input('#', Registries.BLOCK.get(Identifier.of("minecraft",name+"_planks")))
+            ShapedRecipeJsonBuilder.create(ModItems.WOODEN_STICKS.get(name), 4)
+                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks")))
                     .pattern("# ")
                     .pattern(" #")
-                    .criterion(hasItem(Registries.BLOCK.get(Identifier.of("minecraft",name+"_planks"))),
-                            conditionsFromItem(Registries.BLOCK.get(Identifier.of("minecraft",name+"_planks"))))
+                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks"))),
+                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks"))))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STAIRCASES.get(name), 3)
+            ShapedRecipeJsonBuilder.create(ModBlocks.STAIRCASES.get(name), 3)
                     .input('#', block)
                     .input('/', ModItems.WOODEN_STICKS.get(name))
                     .pattern("#  ")
@@ -48,7 +47,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .criterion(hasItem(ModItems.WOODEN_STICKS.get(name)), conditionsFromItem(ModItems.WOODEN_STICKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMALL_STAIRCASES.get(name), 3)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SMALL_STAIRCASES.get(name), 3)
                     .input('#', block)
                     .input('/', ModItems.WOODEN_STICKS.get(name))
                     .pattern("# ")
@@ -57,7 +56,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .criterion(hasItem(ModItems.WOODEN_STICKS.get(name)), conditionsFromItem(ModItems.WOODEN_STICKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STAIRAILS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.STAIRAILS.get(name), 4)
                     .input('#', block)
                     .input('/', ModItems.WOODEN_STICKS.get(name))
                     .pattern("/#/")
@@ -66,7 +65,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .criterion(hasItem(ModItems.WOODEN_STICKS.get(name)), conditionsFromItem(ModItems.WOODEN_STICKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMALL_STAIRAILS.get(name), 3)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SMALL_STAIRAILS.get(name), 3)
                     .input('#', block)
                     .input('/', ModItems.WOODEN_STICKS.get(name))
                     .pattern("/#/")
