@@ -53,12 +53,12 @@ public class ModBlocks
     public static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name, block);
-        return Registry.register(Registry.BLOCK, Identifier.of(AestheticStairs.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(AestheticStairs.MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block)
     {
-        Registry.register(Registry.ITEM, Identifier.of(AestheticStairs.MOD_ID, name),
+        Registry.register(Registry.ITEM, new Identifier(AestheticStairs.MOD_ID, name),
                 new BlockItem(block, new Item.Settings().group(ModItemGroups.ASTAIRS_TAB)));
     }
 

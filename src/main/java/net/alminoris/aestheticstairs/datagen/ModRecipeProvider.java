@@ -27,14 +27,14 @@ public class ModRecipeProvider extends FabricRecipeProvider
         for(String name : BlockSetsHelper.WOODS)
         {
             String blockName = (name.equals("crimson") || name.equals("warped")) ? "stem" : (name.equals("bamboo") ? "block" : "log");
-            Block block = Registry.BLOCK.get(Identifier.of("minecraft","stripped_"+name+"_"+blockName));
+            Block block = Registry.BLOCK.get(new Identifier("minecraft","stripped_"+name+"_"+blockName));
 
             ShapedRecipeJsonBuilder.create(ModItems.WOODEN_STICKS.get(name), 4)
-                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks")))
+                    .input('#', Registry.BLOCK.get(new Identifier("minecraft",name+"_planks")))
                     .pattern("# ")
                     .pattern(" #")
-                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks"))),
-                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft",name+"_planks"))))
+                    .criterion(hasItem(Registry.BLOCK.get(new Identifier("minecraft",name+"_planks"))),
+                            conditionsFromItem(Registry.BLOCK.get(new Identifier("minecraft",name+"_planks"))))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(ModBlocks.STAIRCASES.get(name), 3)

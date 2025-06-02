@@ -72,7 +72,7 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createStaircase(ModJsonTemplates.STAIRCASE_UPLEFT_RAILED, name, modId+baseName, modId+legName, "upleft", true);
         ModJsonHelper.createStaircase(ModJsonTemplates.STAIRCASE_UPRIGHT_RAILED, name, modId+baseName, modId+legName, "upright", true);
         ModJsonHelper.createBlockstate(ModJsonTemplates.STAIRCASE_BLOCKSTATE, name);
-        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticStairs.MOD_ID, "block/"+ name));
+        blockStateModelGenerator.registerParentedItemModel(block, new Identifier(AestheticStairs.MOD_ID, "block/"+ name));
     }
 
     public void registerSmallStaircase(BlockStateModelGenerator blockStateModelGenerator, Block block, String modId, String name, String baseName, String legName)
@@ -94,7 +94,7 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createStaircase(ModJsonTemplates.SMALL_STAIRCASE_UPLEFT_RAILED, name, modId+baseName, modId+legName, "upleft", true);
         ModJsonHelper.createStaircase(ModJsonTemplates.SMALL_STAIRCASE_UPRIGHT_RAILED, name, modId+baseName, modId+legName, "upright", true);
         ModJsonHelper.createBlockstate(ModJsonTemplates.STAIRCASE_BLOCKSTATE, name);
-        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticStairs.MOD_ID, "block/"+ name));
+        blockStateModelGenerator.registerParentedItemModel(block, new Identifier(AestheticStairs.MOD_ID, "block/"+ name));
     }
 
     public void registerStairail(BlockStateModelGenerator blockStateModelGenerator, Block block, String modId, String name, String baseName, String legName)
@@ -104,7 +104,7 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createStaircase(ModJsonTemplates.STAIRAIL_LEFTCORNER, name, modId+baseName, modId+legName, "leftcorner", false);
         ModJsonHelper.createStaircase(ModJsonTemplates.STAIRAIL_RIGHTCORNER, name, modId+baseName, modId+legName, "rightcorner", false);
         ModJsonHelper.createBlockstate(ModJsonTemplates.STAIRAIL_BLOCKSTATE, name);
-        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticStairs.MOD_ID, "block/"+ name+"_side"));
+        blockStateModelGenerator.registerParentedItemModel(block, new Identifier(AestheticStairs.MOD_ID, "block/"+ name+"_side"));
     }
 
     public void registerSmallStairail(BlockStateModelGenerator blockStateModelGenerator, Block block, String modId, String name, String baseName, String legName)
@@ -114,7 +114,7 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createStaircase(ModJsonTemplates.SMALL_STAIRAIL_LEFTCORNER, name, modId+baseName, modId+legName, "leftcorner", false);
         ModJsonHelper.createStaircase(ModJsonTemplates.SMALL_STAIRAIL_RIGHTCORNER, name, modId+baseName, modId+legName, "rightcorner", false);
         ModJsonHelper.createBlockstate(ModJsonTemplates.STAIRAIL_BLOCKSTATE, name);
-        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticStairs.MOD_ID, "block/"+ name+"_side"));
+        blockStateModelGenerator.registerParentedItemModel(block, new Identifier(AestheticStairs.MOD_ID, "block/"+ name+"_side"));
     }
 
     @Override
