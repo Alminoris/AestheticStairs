@@ -26,9 +26,7 @@ public class ModItemGroups
                     "bauhinia", "pine", "fir", "cedar", "araucaria", "juniper"
             };
 
-    public static final ItemGroup ASTAIRS_TAB = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(AestheticStairs.MOD_ID, "astairstab"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astairstab"))
+    public static final ItemGroup ASTAIRS_TAB = FabricItemGroup.builder(Identifier.of(AestheticStairs.MOD_ID, "astairstab")).displayName(Text.translatable("itemgroup.astairstab"))
                     .icon(() -> new ItemStack(ModBlocks.STAIRCASES.get("oak"))).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.WOODS)
@@ -124,7 +122,7 @@ public class ModItemGroups
                                 entries.add(ModItems.WOODEN_STICKS.get(name));
                             }
                         }
-                    }).build());
+                    }).build();
 
     public static void registerItemGroups()
     {
