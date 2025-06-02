@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:stripped_wild_cherry_log"
+    },
+    "/": {
+      "item": "aestheticstairs:wild_cherry_stick"
+    }
+  },
+  "pattern": [
+    "# ",
+    "/#"
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_staircase_wild_cherry"
+  }
+}

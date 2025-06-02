@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:stripped_hawthorn_log"
+    },
+    "/": {
+      "item": "aestheticstairs:hawthorn_stick"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:staircase_hawthorn"
+  }
+}
