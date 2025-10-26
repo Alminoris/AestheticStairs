@@ -20,7 +20,7 @@ public class ModBlocks
 {
     public static final Dictionary<String, Block> STAIRCASES = new Hashtable<>()
     {{
-        for(String name : BlockSetsHelper.getWoods())
+        for(String name : BlockSetsHelper.getWoodsNStones())
         {
             put(name, registerBlock("staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), name, "staircase_"+name)));
         }
@@ -28,7 +28,7 @@ public class ModBlocks
 
     public static final Dictionary<String, Block> SMALL_STAIRCASES = new Hashtable<>()
     {{
-        for(String name : BlockSetsHelper.getWoods())
+        for(String name : BlockSetsHelper.getWoodsNStones())
         {
             put(name, registerBlock("small_staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), name, "small_staircase_"+name)));
         }
@@ -36,7 +36,7 @@ public class ModBlocks
 
     public static final Dictionary<String, Block> STAIRAILS = new Hashtable<>()
     {{
-        for(String name : BlockSetsHelper.getWoods())
+        for(String name : BlockSetsHelper.getWoodsNStones())
         {
             put(name, registerBlock("stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), "stairail_"+name)));
         }
@@ -44,7 +44,7 @@ public class ModBlocks
 
     public static final Dictionary<String, Block> SMALL_STAIRAILS = new Hashtable<>()
     {{
-        for(String name : BlockSetsHelper.getWoods())
+        for(String name : BlockSetsHelper.getWoodsNStones())
         {
             put(name, registerBlock("small_stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), "small_stairail"+name)));
         }
