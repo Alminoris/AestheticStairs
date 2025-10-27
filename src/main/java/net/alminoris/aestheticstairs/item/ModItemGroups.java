@@ -65,6 +65,28 @@ public class ModItemGroups
                             }
                         }
 
+                        for(String name : STONES)
+                            entries.add(ModBlocks.SMALL_STAIRS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_STONES_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        for(String name : STONES)
+                            entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_STONES_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
                         for(String name : BlockSetsHelper.WOODS)
                             entries.add(ModBlocks.STAIRCASES.get(name));
 
@@ -266,6 +288,108 @@ public class ModItemGroups
                             for(String name : NSS_WOOD_NAMES)
                             {
                                 entries.add(ModBlocks.SMALL_STAIRAILS.get(name));
+                            }
+                        }
+
+                        for(String name : BlockSetsHelper.WOODS)
+                            entries.add(ModBlocks.SMALL_STAIRS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("silverwoodtrees"))
+                        {
+                            for(String name : ST_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("whisperleaftrees"))
+                        {
+                            for(String name : WT_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("missingtrees"))
+                        {
+                            for(String name : MT_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("natures_spirit"))
+                        {
+                            for(String name : NSS_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_STAIRS.get(name));
+                            }
+                        }
+
+                        for(String name : BlockSetsHelper.WOODS)
+                            entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+
+                        if (FabricLoader.getInstance().isModLoaded("arborealnature"))
+                        {
+                            for(String name : EXTRA_WOODS_AN)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("wildfields"))
+                        {
+                            for(String name : EXTRA_WOODS_WF)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("silverwoodtrees"))
+                        {
+                            for(String name : ST_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("whisperleaftrees"))
+                        {
+                            for(String name : WT_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("missingtrees"))
+                        {
+                            for(String name : MT_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
+                            }
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("natures_spirit"))
+                        {
+                            for(String name : NSS_WOOD_NAMES)
+                            {
+                                entries.add(ModBlocks.SMALL_HALFSTAIRS.get(name));
                             }
                         }
                     }).build());

@@ -6,7 +6,7 @@
       "item": "minecraft:stripped_acacia_log"
     },
     "/": {
-      "item": "aestheticstairs:acacia_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

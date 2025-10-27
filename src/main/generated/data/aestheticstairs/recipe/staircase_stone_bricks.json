@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    },
+    "/": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:staircase_stone_bricks"
+  }
+}

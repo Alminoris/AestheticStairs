@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "natures_spirit:stripped_mahogany_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:staircase_mahogany_nss"
+  }
+}

@@ -24,6 +24,9 @@ public class ModLanguageProviderEsEs extends FabricLanguageProvider
         woodNStoneObjects.put("small_staircase_", "Escalera pequeña de %s");
         woodNStoneObjects.put("stairail_", "Barandilla de %s");
         woodNStoneObjects.put("small_stairail_", "Barandilla pequeña de %s");
+        woodNStoneObjects.put("small_stairs_", "Pequeña escalera de %s");
+        woodNStoneObjects.put("small_halfstairs_", "Pequeña media escalera de %s");
+
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "piedra");

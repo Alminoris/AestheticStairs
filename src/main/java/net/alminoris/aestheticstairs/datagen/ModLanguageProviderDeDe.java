@@ -24,6 +24,8 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
         woodNStoneObjects.put("small_staircase_", "Kleine Treppe aus %s");
         woodNStoneObjects.put("stairail_", "Geländer aus %s");
         woodNStoneObjects.put("small_stairail_", "Kleines Geländer aus %s");
+        woodNStoneObjects.put("small_stairs_", "Kleine Treppe aus %s");
+        woodNStoneObjects.put("small_halfstairs_", "Kleine Halbt reppe aus %s");
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "Stein");

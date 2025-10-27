@@ -24,6 +24,9 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
         woodNStoneObjects.put("small_staircase_", "Малая лестница из %s");
         woodNStoneObjects.put("stairail_", "Перила из %s");
         woodNStoneObjects.put("small_stairail_", "Малые перила из %s");
+        woodNStoneObjects.put("small_stairs_", "Малая лестница из %s");
+        woodNStoneObjects.put("small_halfstairs_", "Малые полулестницы из %s");
+
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "камня");

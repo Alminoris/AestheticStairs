@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    },
+    "/": {
+      "item": "minecraft:polished_andesite"
+    }
+  },
+  "pattern": [
+    "/#/"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_stairail_andesite"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "whisperleaftrees:aspen_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " # "
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_halfstairs_aspen"
+  }
+}

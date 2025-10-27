@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:granite"
+    },
+    "/": {
+      "item": "minecraft:polished_granite"
+    }
+  },
+  "pattern": [
+    "/#/"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_stairail_granite"
+  }
+}

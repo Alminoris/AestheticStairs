@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mangrove_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
-            "items": "aestheticstairs:mangrove_stick"
+            "items": "minecraft:stick"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_stripped_mangrove_log",
-      "has_mangrove_stick"
+      "has_stick"
     ]
   ],
   "rewards": {

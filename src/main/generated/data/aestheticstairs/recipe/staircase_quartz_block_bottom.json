@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_block"
+    },
+    "/": {
+      "item": "minecraft:quartz_pillar"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:staircase_quartz_block_bottom"
+  }
+}

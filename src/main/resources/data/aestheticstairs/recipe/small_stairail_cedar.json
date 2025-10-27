@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_cedar_log"
     },
     "/": {
-      "item": "aestheticstairs:cedar_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

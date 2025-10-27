@@ -6,7 +6,7 @@
       "item": "minecraft:stripped_warped_stem"
     },
     "/": {
-      "item": "aestheticstairs:warped_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

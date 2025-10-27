@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "wildfields:limestone_block"
+    },
+    "/": {
+      "item": "wildfields:limestone_cobbled"
+    }
+  },
+  "pattern": [
+    "# ",
+    "/#"
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_staircase_limestone_block"
+  }
+}

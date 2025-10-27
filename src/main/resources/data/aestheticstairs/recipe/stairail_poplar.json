@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "whisperleaftrees:stripped_poplar_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:stairail_poplar"
+  }
+}

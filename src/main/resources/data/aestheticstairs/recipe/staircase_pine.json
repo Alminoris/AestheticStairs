@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_pine_log"
     },
     "/": {
-      "item": "aestheticstairs:pine_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

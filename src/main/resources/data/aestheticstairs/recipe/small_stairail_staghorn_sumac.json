@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "silverwoodtrees:stripped_staghorn_sumac_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/"
+    
+    
+  ],
+  "result": {
+    "count": 3,
+    "id": "aestheticstairs:small_stairail_staghorn_sumac"
+  }
+}

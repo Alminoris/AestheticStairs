@@ -24,6 +24,9 @@ public class ModLanguageProviderFrFr extends FabricLanguageProvider
         woodNStoneObjects.put("small_staircase_", "Petit escalier en %s");
         woodNStoneObjects.put("stairail_", "Rampe en %s");
         woodNStoneObjects.put("small_stairail_", "Petite rampe en %s");
+        woodNStoneObjects.put("small_stairs_", "Petits escaliers en %s");
+        woodNStoneObjects.put("small_halfstairs_", "Petits demi-escaliers en %s");
+
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "pierre");

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jungle_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
-            "items": "aestheticstairs:jungle_stick"
+            "items": "minecraft:stick"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_stripped_jungle_log",
-      "has_jungle_stick"
+      "has_stick"
     ]
   ],
   "rewards": {
