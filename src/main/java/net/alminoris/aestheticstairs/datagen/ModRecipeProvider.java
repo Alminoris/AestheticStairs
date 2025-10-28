@@ -34,7 +34,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
         put("quartz_block_bottom", Blocks.QUARTZ_PILLAR);
         put("stone_bricks", Blocks.SMOOTH_STONE);
         put("bricks", Blocks.CHISELED_STONE_BRICKS);
-        put("mud_bricks", Blocks.PACKED_MUD);
         put("sandstone", Blocks.SANDSTONE);
     }};
 

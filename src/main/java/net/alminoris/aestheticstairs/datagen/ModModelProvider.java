@@ -36,7 +36,6 @@ public class ModModelProvider extends FabricModelProvider
         put("quartz_block_bottom", "quartz_pillar");
         put("stone_bricks", "stonecutter_bottom");
         put("bricks", "chiseled_stone_bricks");
-        put("mud_bricks", "packed_mud");
         put("sandstone", "sandstone_bottom");
     }};
 
