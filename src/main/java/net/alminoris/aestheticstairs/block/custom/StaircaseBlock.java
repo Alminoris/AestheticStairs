@@ -10,6 +10,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
@@ -151,7 +152,7 @@ public class StaircaseBlock extends YAxisRotatedBlock
                 else
                     stack.decrement(1);
 
-                ItemStack stickStack = new ItemStack(ModItems.WOODEN_STICKS.get(NAME));
+                ItemStack stickStack = new ItemStack(Items.STICK);
                 stickStack.setCount(3);
                 if (!player.getInventory().insertStack(stickStack))
                     player.dropItem(stickStack, false);

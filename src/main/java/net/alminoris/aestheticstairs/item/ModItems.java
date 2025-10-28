@@ -11,14 +11,6 @@ import java.util.Hashtable;
 
 public class ModItems
 {
-    public static final Dictionary<String, Item> WOODEN_STICKS = new Hashtable<>()
-    {{
-        for(String name : BlockSetsHelper.getWoods())
-        {
-            put(name, registerItem(name+"_stick", new Item(new Item.Settings().group(ModItemGroups.ASTAIRS_TAB))));
-        }
-    }};
-
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registry.ITEM, new Identifier(AestheticStairs.MOD_ID, name), item);

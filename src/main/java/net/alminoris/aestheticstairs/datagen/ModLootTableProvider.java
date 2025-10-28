@@ -15,8 +15,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
     @Override
     public void generateBlockLootTables()
     {
-        for(String name : BlockSetsHelper.getWoods())
+        for(String name : BlockSetsHelper.getWoodsNStones())
         {
+            addDrop(ModBlocks.SMALL_STAIRS.get(name));
+            addDrop(ModBlocks.SMALL_HALFSTAIRS.get(name));
             addDrop(ModBlocks.STAIRCASES.get(name));
             addDrop(ModBlocks.SMALL_STAIRCASES.get(name));
             addDrop(ModBlocks.STAIRAILS.get(name));

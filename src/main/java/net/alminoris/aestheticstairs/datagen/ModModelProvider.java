@@ -2,28 +2,74 @@ package net.alminoris.aestheticstairs.datagen;
 
 import net.alminoris.aestheticstairs.AestheticStairs;
 import net.alminoris.aestheticstairs.block.ModBlocks;
+import net.alminoris.aestheticstairs.block.custom.StaircaseBlock;
+import net.alminoris.aestheticstairs.item.ModItemGroups;
 import net.alminoris.aestheticstairs.item.ModItems;
 import net.alminoris.aestheticstairs.util.helper.BlockSetsHelper;
 import net.alminoris.aestheticstairs.util.helper.ModJsonHelper;
 import net.alminoris.aestheticstairs.util.helper.ModJsonTemplates;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.util.Identifier;
 
+import java.util.Dictionary;
+import java.util.Hashtable;
+
 public class ModModelProvider extends FabricModelProvider
 {
-    public ModModelProvider(FabricDataGenerator dataGenerator)
+    private static final Dictionary<String, String> SECONDARY_STONES = new Hashtable<>()
+    {{
+        put("stone", "cobblestone");
+        put("tuff", "tuff");
+        put("blackstone", "polished_blackstone");
+        put("andesite", "polished_andesite");
+        put("diorite", "polished_diorite");
+        put("granite", "polished_granite");
+        put("deepslate", "cobbled_deepslate");
+        put("basalt_side", "smooth_basalt");
+        put("quartz_block_bottom", "quartz_pillar");
+        put("stone_bricks", "stonecutter_bottom");
+        put("bricks", "chiseled_stone_bricks");
+        put("mud_bricks", "packed_mud");
+        put("sandstone", "sandstone_bottom");
+    }};
+
+    public ModModelProvider(FabricDataGenerator output)
     {
-        super(dataGenerator);
+        super(output);
     }
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator)
     {
+        for(String name : BlockSetsHelper.STONES)
+        {
+            registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name),"minecraft:block/", "staircase_"+name, name, SECONDARY_STONES.get(name));
+            registerSmallStaircase(blockStateModelGenerator, ModBlocks.SMALL_STAIRCASES.get(name),"minecraft:block/", "small_staircase_"+name, name, SECONDARY_STONES.get(name));
+
+            registerStairail(blockStateModelGenerator, ModBlocks.STAIRAILS.get(name),"minecraft:block/", "stairail_"+name, name, SECONDARY_STONES.get(name));
+            registerSmallStairail(blockStateModelGenerator, ModBlocks.SMALL_STAIRAILS.get(name),"minecraft:block/", "small_stairail_"+name, name, SECONDARY_STONES.get(name));
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "minecraft:block/", name, name);
+        }
+
+        for(String name : ModItemGroups.EXTRA_STONES_WF)
+        {
+            registerStaircase(blockStateModelGenerator,  ModBlocks.STAIRCASES.get(name),"aestheticstairs:block/", "staircase_"+name, name, name.replace("block", "cobbled"));
+            registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, name, name.replace("block", "cobbled"));
+
+            registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, name, name.replace("block", "cobbled"));
+            registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, name, name.replace("block", "cobbled"));
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name);
+        }
+
         for(String name : BlockSetsHelper.WOODS)
         {
             String logName = (name.equals("crimson") || name.equals("warped")) ? "stem" : (name.equals("bamboo") ? "block" : "log");
@@ -32,25 +78,91 @@ public class ModModelProvider extends FabricModelProvider
 
             registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"minecraft:block/", "stairail_"+name, "stripped_"+name+"_"+logName, name+"_"+logName);
             registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"minecraft:block/", "small_stairail_"+name, "stripped_"+name+"_"+logName, name+"_"+logName);
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "minecraft:block/", name, name+"_planks");
         }
 
-        for(String name : BlockSetsHelper.EXTRA_WOODS_AN)
+        for(String name : ModItemGroups.AN_WOOD_NAMES)
         {
             registerStaircase(blockStateModelGenerator,  ModBlocks.STAIRCASES.get(name),"aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
             registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
 
             registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
             registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
         }
 
-        for(String name : BlockSetsHelper.EXTRA_WOODS_WF)
+        for(String name : ModItemGroups.WF_WOOD_NAMES)
         {
             registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name), "aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
             registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
 
             registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
             registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
         }
+
+        for(String name : ModItemGroups.ST_WOOD_NAMES)
+        {
+            registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name), "aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
+        }
+
+        for(String name : ModItemGroups.WT_WOOD_NAMES)
+        {
+            registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name), "aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
+        }
+
+        for(String name : ModItemGroups.MT_WOOD_NAMES)
+        {
+            registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name), "aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
+        }
+
+        for(String name : ModItemGroups.NSS_WOOD_NAMES)
+        {
+            registerStaircase(blockStateModelGenerator, ModBlocks.STAIRCASES.get(name), "aestheticstairs:block/", "staircase_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStaircase(blockStateModelGenerator,  ModBlocks.SMALL_STAIRCASES.get(name),"aestheticstairs:block/", "small_staircase_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerStairail(blockStateModelGenerator,  ModBlocks.STAIRAILS.get(name),"aestheticstairs:block/", "stairail_"+name, "stripped_"+name+"_log", name+"_log");
+            registerSmallStairail(blockStateModelGenerator,  ModBlocks.SMALL_STAIRAILS.get(name),"aestheticstairs:block/", "small_stairail_"+name, "stripped_"+name+"_log", name+"_log");
+
+            registerSmallStairs(blockStateModelGenerator, ModBlocks.SMALL_STAIRS.get(name), ModBlocks.SMALL_HALFSTAIRS.get(name), "aestheticstairs:block/", name, name+"_planks");
+        }
+    }
+
+    public void registerSmallStairs(BlockStateModelGenerator blockStateModelGenerator, Block smallStairs, Block smallHalfStairs, String modId, String name, String baseName)
+    {
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_STAIRS, "small_stairs_"+name, modId+baseName);
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_STAIRS_INNER, "small_stairs_"+name+"_inner", modId+baseName);
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_STAIRS_OUTER, "small_stairs_"+name+"_outer", modId+baseName);
+
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_HALFSTAIRS, "small_halfstairs_"+name, modId+baseName);
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_HALFSTAIRS_INNER, "small_halfstairs_"+name+"_inner", modId+baseName);
+        ModJsonHelper.createSmallStair(ModJsonTemplates.SMALL_HALFSTAIRS_OUTER, "small_halfstairs_"+name+"_outer", modId+baseName);
+
+        ModJsonHelper.createBlockstate(ModJsonTemplates.SMALL_STAIRS_BLOCKSTATE, "small_stairs_"+name);
+        ModJsonHelper.createBlockstate(ModJsonTemplates.SMALL_STAIRS_BLOCKSTATE, "small_halfstairs_"+name);
+        blockStateModelGenerator.registerParentedItemModel(smallStairs, new Identifier(AestheticStairs.MOD_ID, "block/"+ "small_stairs_"+name));
+        blockStateModelGenerator.registerParentedItemModel(smallHalfStairs, new Identifier(AestheticStairs.MOD_ID, "block/"+ "small_halfstairs_"+name));
     }
 
     public void registerStaircase(BlockStateModelGenerator blockStateModelGenerator, Block block, String modId, String name, String baseName, String legName)
@@ -120,9 +232,6 @@ public class ModModelProvider extends FabricModelProvider
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator)
     {
-        for(String name : BlockSetsHelper.getWoods())
-        {
-            itemModelGenerator.register(ModItems.WOODEN_STICKS.get(name), Models.GENERATED);
-        }
+
     }
 }
