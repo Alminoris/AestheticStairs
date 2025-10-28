@@ -8,6 +8,31 @@ import java.io.IOException;
 
 public class ModJsonHelper
 {
+    public static void createSmallStair(String jsonContent, String name, String textureBase)
+    {
+        String projectPath = System.getProperty("user.dir");
+
+        String filePath = projectPath.replace("build\\datagen", "src\\main\\resources") + "/assets/"+ AestheticStairs.MOD_ID+"/models/block/";
+
+        File directory = new File(filePath);
+        if (!directory.exists())
+            directory.mkdirs();
+
+        String fileName = name + ".json";
+        File modelFile = new File(directory, fileName);
+
+        jsonContent = jsonContent.replace("BASE_NAME", textureBase);
+
+        try (FileWriter writer = new FileWriter(modelFile))
+        {
+            writer.write(jsonContent);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public static void createStaircase(String jsonContent, String name, String textureBase, String textureLeg, String variant, boolean isRailed)
     {
         String projectPath = System.getProperty("user.dir");
@@ -62,7 +87,7 @@ public class ModJsonHelper
     {
         String projectPath = System.getProperty("user.dir");
 
-        String filePath = projectPath.replace("build\\datagen", "src\\main\\resources") + "/data/"+ AestheticStairs.MOD_ID+"/recipe/";
+        String filePath = projectPath.replace("build\\datagen", "src\\main\\resources") + "/data/"+ AestheticStairs.MOD_ID+"/recipes/";
 
         File directory = new File(filePath);
         if (!directory.exists())
