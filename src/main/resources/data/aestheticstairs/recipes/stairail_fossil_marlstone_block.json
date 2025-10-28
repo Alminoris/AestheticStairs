@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "wildfields:fossil_marlstone_block"
+    },
+    "/": {
+      "item": "wildfields:fossil_marlstone_cobbled"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:stairail_fossil_marlstone_block"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "pattern": [
+    "# ",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_stairs_tuff"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "wildfields:stripped_cottonwood_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/"
+    
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_stairail_cottonwood"
+  }
+}

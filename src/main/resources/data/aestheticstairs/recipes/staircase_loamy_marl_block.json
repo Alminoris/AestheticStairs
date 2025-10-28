@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "wildfields:loamy_marl_block"
+    },
+    "/": {
+      "item": "wildfields:loamy_marl_cobbled"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:staircase_loamy_marl_block"
+  }
+}

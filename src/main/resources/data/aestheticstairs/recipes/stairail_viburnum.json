@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_viburnum_log"
     },
     "/": {
-      "item": "aestheticstairs:viburnum_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "aestheticstairs:stairail_viburnum"
+    "item": "aestheticstairs:stairail_viburnum"
   }
 }

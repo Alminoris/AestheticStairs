@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "natures_spirit:olive_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " # "
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_halfstairs_olive_nss"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:bamboo_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_bamboo_block",
-      "has_bamboo_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],

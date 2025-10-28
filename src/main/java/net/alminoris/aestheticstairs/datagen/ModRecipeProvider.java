@@ -72,7 +72,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .pattern("/# ")
                     .pattern(" /#")
                     .criterion(hasItem(block), conditionsFromItem(block))
-                    .criterion(hasItem(SECONDARY_STONES.get(name)), conditionsFromItem(SECONDARY_STONES.get(name)))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMALL_STAIRCASES.get(name), 3)
@@ -81,7 +80,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .pattern("# ")
                     .pattern("/#")
                     .criterion(hasItem(block), conditionsFromItem(block))
-                    .criterion(hasItem(SECONDARY_STONES.get(name)), conditionsFromItem(SECONDARY_STONES.get(name)))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STAIRAILS.get(name), 4)
@@ -90,7 +88,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .pattern("/#/")
                     .pattern("/#/")
                     .criterion(hasItem(block), conditionsFromItem(block))
-                    .criterion(hasItem(SECONDARY_STONES.get(name)), conditionsFromItem(SECONDARY_STONES.get(name)))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMALL_STAIRAILS.get(name), 3)
@@ -98,7 +95,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .input('/', SECONDARY_STONES.get(name))
                     .pattern("/#/")
                     .criterion(hasItem(block), conditionsFromItem(block))
-                    .criterion(hasItem(SECONDARY_STONES.get(name)), conditionsFromItem(SECONDARY_STONES.get(name)))
                     .offerTo(recipeExporter);
         }
 

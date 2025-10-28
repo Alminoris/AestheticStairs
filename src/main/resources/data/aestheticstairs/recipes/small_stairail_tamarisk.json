@@ -6,7 +6,7 @@
       "item": "wildfields:stripped_tamarisk_log"
     },
     "/": {
-      "item": "aestheticstairs:tamarisk_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "aestheticstairs:small_stairail_tamarisk"
+    "item": "aestheticstairs:small_stairail_tamarisk"
   }
 }

@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_hazelnut_log"
     },
     "/": {
-      "item": "aestheticstairs:hazelnut_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "aestheticstairs:staircase_hazelnut"
+    "item": "aestheticstairs:staircase_hazelnut"
   }
 }

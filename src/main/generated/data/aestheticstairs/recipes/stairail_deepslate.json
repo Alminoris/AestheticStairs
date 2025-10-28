@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "/": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:stairail_deepslate"
+  },
+  "show_notification": true
+}

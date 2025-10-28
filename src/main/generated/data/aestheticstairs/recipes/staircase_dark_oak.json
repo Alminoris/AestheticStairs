@@ -6,7 +6,7 @@
       "item": "minecraft:stripped_dark_oak_log"
     },
     "/": {
-      "item": "aestheticstairs:dark_oak_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

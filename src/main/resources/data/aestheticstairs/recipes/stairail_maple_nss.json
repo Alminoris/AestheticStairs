@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "natures_spirit:stripped_maple_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:stairail_maple_nss"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "natures_spirit:stripped_saxaul_log"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/#/"
+    
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_stairail_saxaul_nss"
+  }
+}

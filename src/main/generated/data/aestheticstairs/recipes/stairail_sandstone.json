@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:sandstone"
+    },
+    "/": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:stairail_sandstone"
+  },
+  "show_notification": true
+}

@@ -6,7 +6,7 @@
       "item": "minecraft:stripped_birch_log"
     },
     "/": {
-      "item": "aestheticstairs:birch_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
