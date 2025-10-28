@@ -138,6 +138,6 @@ public class ModLanguageProviderUkUa extends FabricLanguageProvider
             }
         }
 
-        translationBuilder.add("itemgroup.astairstab","Aesthetic Stairs");
+        translationBuilder.add("itemGroup.aestheticstairs.astairstab","Aesthetic Stairs");
     }
 }
