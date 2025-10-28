@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft:block/polished_tuff",
+		"0": "minecraft:block/tuff",
 		"1": "minecraft:block/tuff",
-		"particle": "minecraft:block/polished_tuff"
+		"particle": "minecraft:block/tuff"
 	},
 	"elements": [
  		{
