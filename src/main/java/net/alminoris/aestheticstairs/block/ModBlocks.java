@@ -7,6 +7,7 @@ import net.alminoris.aestheticstairs.util.helper.BlockSetsHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -18,11 +19,46 @@ import java.util.Hashtable;
 
 public class ModBlocks
 {
+    public static final Dictionary<String, Block> SMALL_STAIRS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.getWoods())
+        {
+            put(name, registerBlock("small_stairs_"+name,
+                    new StairsBlock(Blocks.OAK_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque())));
+        }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("small_stairs_"+name,
+                    new StairsBlock(Blocks.STONE.getDefaultState(), AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque())));
+        }
+    }};
+
+    public static final Dictionary<String, Block> SMALL_HALFSTAIRS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.getWoods())
+        {
+            put(name, registerBlock("small_halfstairs_"+name,
+                    new StairsBlock(Blocks.OAK_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque())));
+        }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("small_halfstairs_"+name,
+                    new StairsBlock(Blocks.STONE.getDefaultState(), AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque())));
+        }
+    }};
+
     public static final Dictionary<String, Block> STAIRCASES = new Hashtable<>()
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
             put(name, registerBlock("staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), name, "staircase_"+name)));
+        }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.STONE), name, "staircase_"+name)));
         }
     }};
 
@@ -32,6 +68,11 @@ public class ModBlocks
         {
             put(name, registerBlock("small_staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), name, "small_staircase_"+name)));
         }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("small_staircase_"+name, new StaircaseBlock(AbstractBlock.Settings.copy(Blocks.STONE), name, "small_staircase_"+name)));
+        }
     }};
 
     public static final Dictionary<String, Block> STAIRAILS = new Hashtable<>()
@@ -40,6 +81,11 @@ public class ModBlocks
         {
             put(name, registerBlock("stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), "stairail_"+name)));
         }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.STONE), "stairail_"+name)));
+        }
     }};
 
     public static final Dictionary<String, Block> SMALL_STAIRAILS = new Hashtable<>()
@@ -47,6 +93,11 @@ public class ModBlocks
         for(String name : BlockSetsHelper.getWoods())
         {
             put(name, registerBlock("small_stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS), "small_stairail"+name)));
+        }
+
+        for(String name : BlockSetsHelper.getStones())
+        {
+            put(name, registerBlock("small_stairail_"+name, new StairailBlock(AbstractBlock.Settings.copy(Blocks.STONE), "small_stairail"+name)));
         }
     }};
 
