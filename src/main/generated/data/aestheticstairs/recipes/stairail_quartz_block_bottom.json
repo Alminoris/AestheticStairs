@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_block"
+    },
+    "/": {
+      "item": "minecraft:quartz_pillar"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticstairs:stairail_quartz_block_bottom"
+  }
+}

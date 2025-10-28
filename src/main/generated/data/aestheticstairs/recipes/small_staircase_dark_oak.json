@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:stripped_dark_oak_log"
     },
     "/": {
-      "item": "aestheticstairs:dark_oak_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +15,5 @@
   "result": {
     "count": 3,
     "item": "aestheticstairs:small_staircase_dark_oak"
-  },
-  "show_notification": true
+  }
 }

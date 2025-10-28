@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:stripped_jungle_log"
     },
     "/": {
-      "item": "aestheticstairs:jungle_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +15,5 @@
   "result": {
     "count": 4,
     "item": "aestheticstairs:stairail_jungle"
-  },
-  "show_notification": true
+  }
 }
