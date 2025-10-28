@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_crimson_stem"
     },
     "/": {
-      "item": "aestheticstairs:crimson_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticstairs:stairail_crimson"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:stairail_crimson",
+    "count": 4
+  }
 }

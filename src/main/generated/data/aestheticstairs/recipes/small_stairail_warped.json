@@ -1,20 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "/#/"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_warped_stem"
     },
     "/": {
-      "item": "aestheticstairs:warped_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "/#/"
-  ],
   "result": {
-    "count": 3,
-    "item": "aestheticstairs:small_stairail_warped"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:small_stairail_warped",
+    "count": 3
+  }
 }

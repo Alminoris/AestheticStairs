@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "# ",
+    "/#"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_birch_log"
     },
     "/": {
-      "item": "aestheticstairs:birch_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "# ",
-    "/#"
-  ],
   "result": {
-    "count": 3,
-    "item": "aestheticstairs:small_staircase_birch"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:small_staircase_birch",
+    "count": 3
+  }
 }

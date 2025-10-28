@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_acacia_log"
     },
     "/": {
-      "item": "aestheticstairs:acacia_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticstairs:stairail_acacia"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:stairail_acacia",
+    "count": 4
+  }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:granite"
+    },
+    "/": {
+      "item": "minecraft:polished_granite"
+    }
+  },
+  "result": {
+    "item": "aestheticstairs:staircase_granite",
+    "count": 3
+  }
+}

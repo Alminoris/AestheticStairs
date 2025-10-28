@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticstairs:small_staircase_crimson"
+    ]
+  },
+  "criteria": {
+    "has_stripped_crimson_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stripped_crimson_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "aestheticstairs:small_staircase_crimson"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_stripped_crimson_stem",
+      "has_stick",
+      "has_the_recipe"
+    ]
+  ]
+}

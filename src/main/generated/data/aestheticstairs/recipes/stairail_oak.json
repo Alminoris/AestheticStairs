@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_oak_log"
     },
     "/": {
-      "item": "aestheticstairs:oak_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticstairs:stairail_oak"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:stairail_oak",
+    "count": 4
+  }
 }

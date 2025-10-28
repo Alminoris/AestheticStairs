@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    "/#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blackstone"
+    },
+    "/": {
+      "item": "minecraft:polished_blackstone"
+    }
+  },
+  "result": {
+    "item": "aestheticstairs:small_staircase_blackstone",
+    "count": 3
+  }
+}

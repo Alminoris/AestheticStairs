@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticstairs:small_stairs_dark_oak"
+    ]
+  },
+  "criteria": {
+    "has_dark_oak_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "aestheticstairs:small_stairs_dark_oak"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dark_oak_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

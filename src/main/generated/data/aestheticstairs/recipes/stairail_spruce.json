@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "key": {
     "#": {
       "item": "minecraft:stripped_spruce_log"
     },
     "/": {
-      "item": "aestheticstairs:spruce_stick"
+      "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticstairs:stairail_spruce"
-  },
-  "show_notification": true
+    "item": "aestheticstairs:stairail_spruce",
+    "count": 4
+  }
 }

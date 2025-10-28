@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    },
+    "/": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "result": {
+    "item": "aestheticstairs:small_stairail_tuff",
+    "count": 3
+  }
+}
