@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crimson_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:crimson_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_crimson_stem",
-      "has_crimson_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
@@ -43,6 +43,5 @@
     "recipes": [
       "aestheticstairs:staircase_crimson"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

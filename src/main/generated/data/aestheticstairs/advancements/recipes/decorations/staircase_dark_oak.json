@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dark_oak_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:dark_oak_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_dark_oak_log",
-      "has_dark_oak_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
@@ -43,6 +43,5 @@
     "recipes": [
       "aestheticstairs:staircase_dark_oak"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

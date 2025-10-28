@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:basalt"
+    }
+  },
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_halfstairs_basalt_side"
+  },
+  "show_notification": true
+}

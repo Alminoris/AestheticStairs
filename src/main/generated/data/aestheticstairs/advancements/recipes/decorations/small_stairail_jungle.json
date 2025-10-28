@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jungle_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:jungle_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_jungle_log",
-      "has_jungle_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
@@ -43,6 +43,5 @@
     "recipes": [
       "aestheticstairs:small_stairail_jungle"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

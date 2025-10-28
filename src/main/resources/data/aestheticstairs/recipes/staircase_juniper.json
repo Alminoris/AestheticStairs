@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_juniper_log"
     },
     "/": {
-      "item": "aestheticstairs:juniper_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "aestheticstairs:staircase_juniper"
+    "item": "aestheticstairs:staircase_juniper"
   }
 }

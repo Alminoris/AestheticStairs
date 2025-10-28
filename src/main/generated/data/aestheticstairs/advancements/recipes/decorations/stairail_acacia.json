@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_acacia_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:acacia_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_acacia_log",
-      "has_acacia_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
@@ -43,6 +43,5 @@
     "recipes": [
       "aestheticstairs:stairail_acacia"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

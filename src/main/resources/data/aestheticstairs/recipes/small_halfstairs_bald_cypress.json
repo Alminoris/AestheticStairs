@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arborealnature:bald_cypress_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " # "
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_halfstairs_bald_cypress"
+  }
+}

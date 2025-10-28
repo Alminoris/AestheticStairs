@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:mud_bricks"
+    },
+    "/": {
+      "item": "minecraft:packed_mud"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:staircase_mud_bricks"
+  },
+  "show_notification": true
+}

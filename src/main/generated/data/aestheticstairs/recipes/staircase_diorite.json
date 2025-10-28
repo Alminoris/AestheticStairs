@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diorite"
+    },
+    "/": {
+      "item": "minecraft:polished_diorite"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "/# ",
+    " /#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:staircase_diorite"
+  },
+  "show_notification": true
+}

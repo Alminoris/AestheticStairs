@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "silverwoodtrees:staghorn_sumac_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " # "
+    
+  ],
+  "result": {
+    "count": 3,
+    "item": "aestheticstairs:small_halfstairs_staghorn_sumac"
+  }
+}

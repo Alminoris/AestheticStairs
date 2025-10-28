@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_spruce_stick": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "aestheticstairs:spruce_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_stripped_spruce_log",
-      "has_spruce_stick",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
@@ -43,6 +43,5 @@
     "recipes": [
       "aestheticstairs:small_staircase_spruce"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

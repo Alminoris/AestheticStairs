@@ -6,7 +6,7 @@
       "item": "arborealnature:stripped_plum_log"
     },
     "/": {
-      "item": "aestheticstairs:plum_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "aestheticstairs:stairail_plum"
+    "item": "aestheticstairs:stairail_plum"
   }
 }
